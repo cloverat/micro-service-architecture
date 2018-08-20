@@ -5,7 +5,6 @@
     <!--<include resource="org/springframework/boot/logging/logback/base.xml" />-->
 
     <!--定义日志文件的存储地址和前缀名-->
-    <!--<property name="LOG_HOME" value="F:/logs"/>-->
     <property name="LOG_HOME" value=""/>
     <property name="LOG_PREFIX" value="micro-eureka-server"/>
 
@@ -55,8 +54,9 @@
 
     <!-- 日志输出级别   这样设置不打印日志 -->
     <root level="INFO">
-        <!-- <appender-ref ref="STDOUT" /> -->
+        <!--   <appender-ref ref="STDOUT" />  -->
         <appender-ref ref="INFO_FILE"/>
         <appender-ref ref="ERROR_FILE"/>
     </root>
+
 </configuration>
